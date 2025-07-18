@@ -1,8 +1,8 @@
 [
     {
-        "id": "CEC001",
+        "id": "TEST001",
         "type": "CEC",
-        "firmware": "v1.0.0",
+        "firmware": "v2.1.3",
         "status": "active"
     }
 ]
