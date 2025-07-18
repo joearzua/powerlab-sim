@@ -13,10 +13,7 @@ Simulated lab management tool for IBM Power Systems.
 ## Getting Started
 
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/powerlab-sim
-
-# Run the device manager
+# Run the device manager to add a device to lab_config.json
 python backend/device_manager.py
 
 # Simulate device via Docker
