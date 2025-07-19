@@ -1,4 +1,4 @@
-# PowerLab Sim 🧪
+# PowerLab Sim ![Python Tests](https://github.com/joearzua/powerlab-sim/actions/workflows/python-tests.yml/badge.svg?branch=dev)
 
 Simulated lab management tool for IBM Power Systems.
 
@@ -7,8 +7,8 @@ Simulated lab management tool for IBM Power Systems.
 - Add/remove/configure virtual lab devices
 - Simulate firmware and OS updates
 - Track config changes in JSON
-- Docker-based device simulation
-- CI pipeline using GitHub Actions
+- Docker-based device simulation (in progress)
+- CI pipeline using GitHub Actions (in progress)
 
 ## Getting Started
 
