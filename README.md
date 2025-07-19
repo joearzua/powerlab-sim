@@ -1,4 +1,4 @@
-# PowerLab Sim ![Python Tests](https://github.com/joearzua/powerlab-sim/actions/workflows/python-tests.yml/badge.svg?branch=dev)
+# PowerLab Sim [![](https://github.com/joearzua/powerlab-sim/actions/workflows/python-tests.yml/badge.svg?branch=dev)](https://github.com/joearzua/powerlab-sim/actions/workflows/python-tests.yml)
 
 Simulated lab management tool for IBM Power Systems.
 
