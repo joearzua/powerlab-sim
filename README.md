@@ -7,7 +7,7 @@ Simulated lab management tool for IBM Power Systems.
 - Add/remove/configure virtual lab devices
 - Simulate firmware and OS updates
 - Track config changes in JSON
-- Docker-based device simulation (in progress)
+- Simulate virtual lab devices via Docker and Flask API
 - CI pipeline using GitHub Actions (in progress)
 
 ## Getting Started

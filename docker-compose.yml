@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: powerlab_backend
+    ports:
+      - "5000:5000"  # expose Flask port to host
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    command: flask run --host=0.0.0.0 --port=5000
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+
+  device_sim:
+    build:
+      context: ./device_sim
+    container_name: device_simulator
+    depends_on:
+      - backend
+    working_dir: /app
+    volumes:
+      - ./device_sim:/app
+    environment:
+      - DEVICE_ID=SIM001
+      - DEVICE_TYPE=CEC
+      - FIRMWARE=v1.0.0
+      - BACKEND_URL=http://backend:5000
