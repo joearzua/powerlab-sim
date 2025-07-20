@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import device_manager
+from . import device_manager
 
 app = Flask(__name__)
 
@@ -20,3 +20,8 @@ def update_firmware():
     data = request.json
     device_manager.update_firmware(data["id"], data["firmware"])
     return jsonify({"status": "updated"}), 200
+
+@app.route("/devices", methods=["GET"])
+def get_devices():
+    devices = device_manager.load_devices()
+    return jsonify(devices), 200
