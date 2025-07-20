@@ -1,10 +1,10 @@
 import unittest
-import os
 import json
 from pathlib import Path
 from backend import device_manager
 
 TEST_FILE = Path(__file__).parent.parent / "lab_config.json"
+
 
 class TestDeviceManager(unittest.TestCase):
 

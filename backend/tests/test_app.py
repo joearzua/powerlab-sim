@@ -1,10 +1,12 @@
+
 import unittest
 import json
-import os
 from pathlib import Path
 from backend.app import app, device_manager
 
+
 TEST_FILE = Path(__file__).parent.parent / "lab_config.json"
+
 
 class TestAppRoutes(unittest.TestCase):
     def setUp(self):
@@ -61,6 +63,7 @@ class TestAppRoutes(unittest.TestCase):
         data = response.get_json()
         self.assertIsInstance(data, list)
         self.assertEqual(data[0]["id"], "GETTEST")
+
 
 if __name__ == '__main__':
     unittest.main()

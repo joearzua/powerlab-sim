@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from . import device_manager
 
 
-
 app = Flask(__name__)
 
 
