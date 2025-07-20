@@ -18,6 +18,8 @@ env/
 .vscode/
 .idea/
 *.iml
+*~
+*.un~
 
 # Logs and databases
 *.log
