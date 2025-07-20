@@ -23,7 +23,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt || true  # if you don't have one, ignore
+        pip install flake8
+
+    - name: Lint code with flake8
+      run: flake8 backend
 
     - name: Run unittests
       run: |
         python -m unittest discover -s backend/tests
+    
+    - name: Build Docker image
+      run: |
+        docker build -t powerlab-backend ./backend
