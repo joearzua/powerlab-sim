@@ -14,7 +14,15 @@ Simulated lab management tool for IBM Power Systems.
 
 ```bash
 # Add a device to lab_config.json using the device manager script
-python backend/device_manager.py
+~/powerlab-sim-main> python backend/device_manager.py
+Added device: {'id': 'CEC001', 'type': 'CEC', 'firmware': 'v1.0.0', 'status': 'active'}
 
 # Use Docker Compose to simulate the device environment
-docker-compose up --build
+~/powerlab-sim-main> docker-compose up --build
+[+] Running 4/4
+  backend                     Built                                                                                                                                                    0.0s
+  device_sim                  Built                                                                                                                                                    0.0s
+  Container powerlab_backend  Recreated                                                                                                                                                0.2s
+  Container device_simulator  Recreated                                                                                                                                                0.1s
+Attaching to device_simulator, powerlab_backend
+powerlab_backend  |  * Serving Flask app 'app.py'
