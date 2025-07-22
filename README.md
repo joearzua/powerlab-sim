@@ -20,9 +20,9 @@ Added device: {'id': 'CEC001', 'type': 'CEC', 'firmware': 'v1.0.0', 'status': 'a
 # Use Docker Compose to simulate the device environment
 ~/powerlab-sim-main> docker-compose up --build
 [+] Running 4/4
-  backend                     Built                                                                                                                                                    0.0s
-  device_sim                  Built                                                                                                                                                    0.0s
-  Container powerlab_backend  Recreated                                                                                                                                                0.2s
-  Container device_simulator  Recreated                                                                                                                                                0.1s
+  backend                     Built                 0.0s
+  device_sim                  Built                 0.0s
+  Container powerlab_backend  Recreated             0.2s
+  Container device_simulator  Recreated             0.1s
 Attaching to device_simulator, powerlab_backend
 powerlab_backend  |  * Serving Flask app 'app.py'
